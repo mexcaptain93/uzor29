@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Беломорские узоры</title>
+</head>
+<body>
+<div class="container">
+<div class="call-us">
+    <span class="call-us__text">
+        Позвоните нам: (8182) 652 289
+    </span>
+    <div class="call-us__icon">
+        <img src="img/phone.png" alt="Позвоните нам">
+    </div>
+</div>
+<div class="header">
+    <div class="header__logo logo">
+        <a href="/">
+            <img class="logo__img" src="img/logo.png" alt="Беломорские узоры">
+            <div class="header__logo-text logo-text">
+                <div>
+                    <span class="logo-text__text">Предприятие народных художественных промыслов</span>
+                    <div class="logo-text__img">
+                        <img src="img/logo-text.png" alt="Беломорские узоры">
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="header__menu menu">
+        <div class="header-menu">
+            <span class="menu__item">
+                <a class="menu__link" href="/">Главная</a>
+            </span>
+            <span class="menu__item">
+                    <a class="menu__link" href="/delivery">Доставка</a>
+                </span>
+            <span class="menu__item">
+                    <a class="menu__link" href="/contacts">Контакты</a>
+                </span>
+            <span class="menu__item">
+                    <a class="menu__link" href="/catalog">Продукция</a>
+                </span>
+            <span class="menu__item">
+                    <a class="menu__link" href="/payment">Оплата</a>
+                </span>
+            <span class="menu__item">
+                    <a class="menu__link" href="/faq">Вопрос-ответ</a>
+            </span>
+        </div>
+    </div>
+    <div class="header__phones phones">
+        <div class="phones__list">
+            <div class="phones__item">(8182) 652-289</div>
+            <div class="phones__item">(8182) 652-289</div>
+        </div>
+    </div>
+    <div class="header__hours hours">
+        <div class="hours__wrap">
+            <div class="hours__text">
+                Режим работы:
+            </div>
+            <div class="hours__hours">
+                с 8:30 до 16:30
+            </div>
+        </div>
+    </div>
+    <div class="header__burger">
+        <a href="#" class="js-mobile-menu-btn">
+            <img src="img/menu-options.png" alt="Меню">
+        </a>
+    </div>
+    <div class="header__basket basket">
+        <div class="basket__wrap">
+            <a href="/basket" class="basket__link">
+                <span>48</span>
+                <i></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="popup-menu js-mobile-menu">
+    <div class="popup-menu__inner">
+        <div class="popup-menu__close">
+            <a href="#" class="js-mobile-menu-close">
+                <img src="img/close.png" alt="Закрыть">
+            </a>
+        </div>
+        <div class="popup-menu__categories categories">
+            <div class="categories__btn js-mobile-menu-categories-btn">
+                <a href="#">
+                    <span>Категории</span>
+                    <i></i>
+                </a>
+            </div>
+            <div class="categories__list js-mobile-menu-categories">
+                <div class="categories__item">
+                    <a href="#">
+                        Каргопольский сувенир
+                    </a>
+                </div>
+                <div class="categories__item">
+                    <a href="#">
+                        Строчевышитие изделия
+                    </a>
+                </div>
+                <div class="categories__item">
+                    <a href="#">
+                        Трикотажные и тканные изделия
+                    </a>
+                </div>
+                <div class="categories__item">
+                    <a href="#">
+                        Художественные изделия из дерева
+                    </a>
+                </div>
+                <div class="categories__item">
+                    <a href="#">
+                        Товары со скидкой
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="popup-menu__main-menu main-menu">
+            <div class="main-menu__list">
+                <div class="main-menu__item">
+                    <a href="#">
+                        Главная
+                    </a>
+                </div>
+                <div class="main-menu__item">
+                    <a href="#">
+                        Продукция
+                    </a>
+                </div>
+                <div class="main-menu__item">
+                    <a href="#">
+                        Доставка
+                    </a>
+                </div>
+                <div class="main-menu__item">
+                    <a href="#">
+                        Оплата
+                    </a>
+                </div>
+                <div class="main-menu__item">
+                    <a href="#">
+                        Контакты
+                    </a>
+                </div>
+                <div class="main-menu__item">
+                    <a href="#">
+                        Вопрос-ответ
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="popup-menu__basket basket">
+            <div class="basket__link">
+                <a href="#">
+                    Корзина (<span>48</span>)
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main index">
+    <div class="main__sidebar sidebar">
+        <ul class="sidebar__menu-sidebar menu-sidebar js-menu-sidebar">
+            <li class="menu-sidebar__category js-menu-sidebar-item">
+                <a href="">
+                    Каргопольский сувенир
+                </a>
+            </li>
+            <li class="menu-sidebar__category js-menu-sidebar-item">
+                <a href="">
+                    Строчевышитые изделия
+                </a>
+                <ul>
+                    <li><a href="">Грелка</a></li>
+                    <li><a href="">Занавески</a></li>
+                    <li><a href="">Мешок</a></li>
+                    <li><a href="">Наволочка</a></li>
+                    <li><a href="">Настольник</a></li>
+                    <li><a href="">Платок</a></li>
+                    <li><a href="">Полотенце</a></li>
+                    <li><a href="">Прихватка</a></li>
+                    <li><a href="">Рубаха</a></li>
+                    <li><a href="">Рукавичка</a></li>
+                    <li><a href="">Салфетка</a></li>
+                    <li><a href="">Сарафан</a></li>
+                    <li><a href="">Скатерть</a></li>
+                    <li><a href="">Сумка</a></li>
+                    <li><a href="">Фартук</a></li>
+                </ul>
+            </li>
+            <li class="menu-sidebar__category js-menu-sidebar-item">
+                <a href="">
+                    Трикотажные и тканые изделия
+                </a>
+                <ul>
+                    <li><a href="">Варежки</a></li>
+                    <li><a href="">Гетры</a></li>
+                    <li><a href="">Гольфы</a></li>
+                    <li><a href="">Джемпер</a></li>
+                    <li><a href="">Жакет</a></li>
+                    <li><a href="">Жилет</a></li>
+                    <li><a href="">Носки</a></li>
+                    <li><a href="">Сумка</a></li>
+                    <li><a href="">Футляр</a></li>
+                    <li><a href="">Шаль</a></li>
+                    <li><a href="">Шапка</a></li>
+                    <li><a href="">Шапка с шарфом</a></li>
+                    <li><a href="">Шарф</a></li>
+                </ul>
+            </li>
+            <li class="menu-sidebar__category js-menu-sidebar-item">
+                <a href="">
+                    Художественные изделия из дерева
+                </a>
+                <ul>
+                    <li><a href="">Авторское изделие</a></li>
+                    <li><a href="">Блюдо</a></li>
+                    <li><a href="">Бочонок</a></li>
+                    <li><a href="">Доска</a></li>
+                    <li><a href="">Карандашница</a></li>
+                    <li><a href="">Ключ</a></li>
+                    <li><a href="">Ковш</a></li>
+                    <li><a href="">Комплект</a></li>
+                    <li><a href="">Корзина</a></li>
+                    <li><a href="">Короб</a></li>
+                    <li><a href="">Коробушка</a></li>
+                    <li><a href="">Кружка</a></li>
+                    <li><a href="">Ларец</a></li>
+                    <li><a href="">Ложка</a></li>
+                    <li><a href="">Лопатка</a></li>
+                    <li><a href="">Лоток</a></li>
+                    <li><a href="">Матрешка</a></li>
+                    <li><a href="">Пасочница</a></li>
+                    <li><a href="">Поднос</a></li>
+                    <li><a href="">Подставка</a></li>
+                    <li><a href="">Полка</a></li>
+                    <li><a href="">Солонка</a></li>
+                    <li><a href="">Ступка с пестиком</a></li>
+                    <li><a href="">Сувенир</a></li>
+                    <li><a href="">Сундук</a></li>
+                    <li><a href="">Тарелка</a></li>
+                    <li><a href="">Туес</a></li>
+                    <li><a href="">Футляр</a></li>
+                    <li><a href="">Чаша</a></li>
+                    <li><a href="">Шкатулка</a></li>
+                    <li><a href="">Щепная птица</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="main__content content">
+        <div class="hot">
+            <div class="hot__big">
+                <div class="category-big">
+                    <a href="#" class="category-big__name">
+                        Строчевышитые изделия
+                    </a>
+                    <div class="category-big__content">
+                        <div class="category-big__img">
+                            <img src="img/temp/category-big.jpg" alt="Строчевышитые изделия"/>
+                        </div>
+                        <div class="category-big__text">
+                            <p>
+                                Из отходов глины каргопольские гончары лепили незамысловатые игрушки, прежде всего для
+                                себя, своих семей.
+                            </p>
+                            <p class="tablet">
+                                Так появилась каргопольская игрушка, которую раскрашивали, кто чем был горазд
+                            </p>
+                        </div>
+                    </div>
+                    <div class="category-big__details">
+                        <a href="#" class="btn">Подробнее</a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="hot__list">
+                <div class="hot__table">
+                    <div class="hot__table-row js-hot-table-row">
+                        <div class="hot__item">
+                            <div class="category-small">
+                                    <span class="category-small__name">
+                                        Каргопольский сувенир
+                                    </span>
+                                <div class="category-small__content">
+                                    <div class="category-small__img">
+                                        <img src="img/temp/category-small3.jpg" alt="Каргопольский сувенир"/>
+                                    </div>
+                                    <div class="category-small__price">
+                                        <span>Цена от:</span>
+                                        <span class="price">1 740 руб.</span>
+                                    </div>
+                                    <div class="category-small__text">
+                                        Из отходов глины каргопольские гончары лепили незамысловатые игрушки, прежде
+                                        всего – для себя...
+                                    </div>
+                                </div>
+                                <div class="category-small__details">
+                                    <a href="#" class="btn">Подробнее</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="hot__item">
+                            <div class="category-small">
+                                    <span class="category-small__name">
+                                        Каргопольский сувенир
+                                    </span>
+                                <div class="category-small__content">
+                                    <div class="category-small__img">
+                                        <img src="img/temp/category-small1.jpg" alt="Каргопольский сувенир"/>
+                                    </div>
+                                    <div class="category-small__price">
+                                        <span>Цена от:</span>
+                                        <span class="price">1 740 руб.</span>
+                                    </div>
+                                    <div class="category-small__text">
+                                        Из отходов глины каргопольские гончары лепили незамысловатые игрушки, прежде
+                                        всего – для себя...
+                                        Из отходов глины каргопольские гончары лепили незамысловатые игрушки, прежде
+                                        всего – для себя...
+                                    </div>
+                                </div>
+                                <div class="category-small__details">
+                                    <a href="#" class="btn">Подробнее</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hot__table-row hot__table-row_bottom js-hot-table-row">
+                        <div class="hot__item">
+                            <div class="category-small">
+                                    <span class="category-small__name">
+                                        Художественные изделия из дерева
+                                    </span>
+                                <div class="category-small__content">
+                                    <div class="category-small__img">
+                                        <img src="img/temp/category-small2.jpg" alt="Каргопольский сувенир"/>
+                                    </div>
+                                    <div class="category-small__price">
+                                        <span>Цена от:</span>
+                                        <span class="price">1 740 руб.</span>
+                                    </div>
+                                    <div class="category-small__text">
+                                        Из отходов глины каргопольские гончары лепили незамысловатые игрушки, прежде
+                                        всего – для себя...
+                                    </div>
+                                </div>
+                                <div class="category-small__details">
+                                    <a href="#" class="btn">Подробнее</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="hot__item">
+                            <div class="category-small">
+                                    <span class="category-small__name">
+                                        Каргопольский сувенир
+                                    </span>
+                                <div class="category-small__content">
+                                    <div class="category-small__img">
+                                        <img src="img/temp/category-small4.jpg" alt="Каргопольский сувенир"/>
+                                    </div>
+                                    <div class="category-small__price">
+                                        <span>Цена от:</span>
+                                        <span class="price">1 740 руб.</span>
+                                    </div>
+                                    <div class="category-small__text">
+                                        Из отходов глины каргопольские гончары лепили незамысловатые игрушки, прежде
+                                        всего – для себя...
+                                    </div>
+                                </div>
+                                <div class="category-small__details">
+                                    <a href="#" class="btn">Подробнее</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info__left">
+                <div class="info__spec js-equal-bottom-3">
+                    <h4>
+                        Мы специализируемся на авторских изделиях и редких сувенирах, выполненных вручную в русском
+                        народном стиле:
+                    </h4>
+                    <ul>
+                        <li>Художественные изделия из дерева с росписью и резьбой: <a href="#">сувениры</a>, <a
+                                href="#">шкатулки</a>, <a href="#">тарелки</a>, <a href="#">солонки</a>, <a href="#">короба</a>,
+                            <a href="#">ложки</a>, <a href="#">ковши</a> и другое;
+                        </li>
+                        <li>Ручное ткачество и вязание: <a href="#">варежки</a>, <a href="#">гетры</a>, <a href="#">жилеты</a>,
+                            <a href="#">джемпера</a>, <a href="#">жакеты</a>, <a href="#">носки</a>, <a
+                                    href="#">шапки</a> и другое;
+                        </li>
+                        <li>Строчевышитые изделия из льна: <a href="#">скатерти</a>, <a href="#">занавески</a>, <a
+                                href="#">салфетки</a>, <a href="#">полотенца</a> и другое;
+                        </li>
+                        <li>А так же Изделия из бересты и Каргопольская глиняная игрушка.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info__right right">
+                <div class="right__inner">
+                    <div class="right__item">
+                        <div class="info__order js-equal-bottom js-equal-bottom-3">
+                            <p>Принимаем заказы на изготовление изделий по Вашим эскизам как от юридических, так и от
+                                физических
+                                лиц.</p>
+                            <p>Доставка осуществляется транспортными компаниями (на Ваш выбор) или наложенным платежом
+                                почтой
+                                России.</p>
+                            <p>Стоимость доставки зависит от Вашего местоположения, веса и объема заказа.</p>
+                        </div>
+
+                    </div>
+                    <div class="right__item">
+                        <div class="info__docs docs js-equal-bottom js-equal-bottom-3">
+                            <a href="#" class="docs__item">Результаты СОУТ 2017</a>
+                            <a href="#" class="docs__item">Результаты СОУТ 2016</a>
+                            <a href="#" class="docs__item">Результаты СОУТ 2015</a>
+                            <a href="#" class="docs__item">Результаты СОУТ 2014</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer__horse"></div>
+    <div class="footer__block">
+        <span class="helvetica_medium">&copy; ЗАО Народные художественные промыслы "Беломорские узоры"</span>
+    </div>
+    <div class="footer__block">
+        <div class="footer__address">
+            <span>Архангельск, Шубина 3</span>
+        </div>
+        <div class="footer__mail">
+            <span>belomoruzor.ru</span>
+        </div>
+        <div class="footer__phone">
+            <span> (8182) 652-289, (8182) 652-289 </span>
+        </div>
+    </div>
+
+
+</div>
+</div>
+</body>
+</html>

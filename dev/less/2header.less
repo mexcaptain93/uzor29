@@ -1,0 +1,495 @@
+.call-us {
+  position: relative;
+  background-color: @red;
+  height: 60px;
+  @media screen and (min-width: @big_phone) {
+    height: 80px;
+  }
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    .helvetica_medium();
+    font-size: 14px;
+    line-height: 60px;
+    color: @white;
+    text-align: center;
+    width: 100%;
+    @media screen and (min-width: @big_phone) {
+      font-size: 20px;
+      line-height: 80px;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    right: 20px;
+    @media screen and (min-width: @big_phone) {
+      right: 42px;
+    }
+    @media screen and (min-width: @tablet) {
+      right: 51px;
+    }
+    img {
+      height: 20px;
+      @media screen and (min-width: @big_phone) {
+        height: 25px;
+      }
+    }
+  }
+}
+
+.header {
+  background-image: url('../img/header_back.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 0 10px;
+  font-size: 0;
+  line-height: 0;
+  height: 55px;
+  margin-bottom: 20px;
+  @media screen and (min-width: @big_phone) {
+    height: 110px;
+    padding: 0 20px;
+  }
+  @media screen and (min-width: @desktop) {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  @media screen and (min-width: @desktop) {
+    padding: 0 50px;
+    table-layout: auto;
+  }
+  &__logo {
+    display: table-cell;
+    vertical-align: middle;
+    height: 55px;
+    width: 145px;
+    position: relative;
+    z-index: 3;
+    @media screen and (min-width: @big_phone) {
+      height: 110px;
+    }
+    @media screen and (min-width: @desktop_middle) {
+      padding-left: 145px;
+      height: 110px;
+    }
+    .logo {
+      &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 71px;
+        @media screen and (min-width: @big_phone) {
+          width: 143px;
+        }
+      }
+    }
+  }
+
+  &__logo-text {
+    vertical-align: middle;
+    width: 165px;
+    padding-left: 80px;
+    padding-right: 3px;
+    box-sizing: content-box;
+    @media screen and (min-width: @big_phone) {
+      width: 355px;
+      padding-left: 177px;
+    }
+
+    @media screen and (min-width: @desktop) {
+      display: none;
+    }
+    @media screen and (min-width: @desktop_middle) {
+      display: block;
+      padding-left: 15px;
+    }
+    .logo-text {
+      &__text {
+        display: block;
+        font-size: 6px;
+        color: fade(@black, 50%);
+        margin-bottom: 5px;
+        line-height: 1;
+        @media screen and (min-width: @big_phone) {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+      &__img {
+        display: block;
+        width: 125px;
+        @media screen and (min-width: @big_phone) {
+          width: 195px;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  &__phones {
+    vertical-align: middle;
+    text-align: center;
+    display: none;
+    @media screen and (min-width: @tablet) {
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -35px;
+      right: 111px;
+      color: @gray;
+      font-size: 18px;
+      line-height: 33px;
+    }
+    @media screen and (min-width: @desktop) {
+      display: table-cell;
+      position: static;
+      width: 230px;
+    }
+    .phones {
+      &__list {
+        position: relative;
+        display: inline-block;
+        padding-left: 50px;
+        &::after {
+          content: '';
+          display: block;
+          width: 38px;
+          height: 44px;
+          background-image: url('../img/phone-red.png');
+          position: absolute;
+          top: 50%;
+          margin-top: -22px;
+          left: 0;
+        }
+      }
+      &__item {
+        color: @black;
+        font-size: 18px;
+        line-height: 33px;
+      }
+    }
+  }
+  &__burger {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    right: 17px;
+    @media screen and (min-width: @big_phone) {
+      margin-top: -6px;
+      right: 41px;
+    }
+    @media screen and (min-width: @tablet) {
+      margin-top: -3px;
+      right: 48px;
+    }
+    @media screen and (min-width: @desktop) {
+      display: none;
+    }
+    img {
+      @media screen and (min-width: @tablet) {
+        height: 15px;
+      }
+    }
+  }
+  &__menu {
+    display: none;
+    @media screen and (min-width: @desktop) {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 60px;
+      padding-bottom: 4px;
+      width: 370px;
+    }
+    @media screen and (min-width: @desktop_middle) {
+      padding-left: 0;
+    }
+    .header-menu {
+      width: 525px;
+      @media screen and (min-width: @desktop_middle) {
+        width: 370px;
+      }
+      @media screen and (min-width: @desktop_big) {
+        margin: 0 auto;
+      }
+    }
+    .menu {
+      &__item {
+        width: 33.3%;
+        display: inline-block;
+      }
+      &__link {
+        font-size: 18px;
+        line-height: 33px;
+        color: #000;
+        border-bottom: 1px solid #d63430;
+        .tr;
+        &:hover {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+  }
+  &__basket {
+    display: none;
+    @media screen and (min-width: @desktop) {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: right;
+      padding-left: 1%;
+      width: 60px;
+    }
+    @media screen and (min-width: @desktop_middle) {
+      padding-left: 3.7%;
+    }
+    .basket {
+      &__link {
+        font-size: 13px;
+        line-height: 26px;
+        color: #d63430;
+        position: relative;
+        top: -13px;
+        span {
+          display: inline-block;
+          text-align: center;
+          width: 26px;
+          height: 26px;
+          background-color: #fff;
+          border-radius: 13px;
+          position: relative;
+          z-index: 1;
+        }
+        i {
+          display: block;
+          background-image: url('../img/basket.png');
+          width: 38px;
+          height: 41px;
+          position: absolute;
+          top: 0;
+          right: 10px;
+          z-index: 0;
+        }
+      }
+    }
+  }
+  &__hours {
+    display: none;
+    @media screen and (min-width: @desktop_big) {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      width: 180px;
+    }
+    .hours {
+      &__wrap {
+        position: relative;
+        padding-left: 50px;
+        display: inline-block;
+        &::after {
+          content: '';
+          display: block;
+          width: 40px;
+          height: 39px;
+          background-image: url('../img/hours.png');
+          position: absolute;
+          top: 50%;
+          margin-top: -20px;
+          left: 0
+        }
+      }
+      &__text {
+        color: #000;
+        font-size: 18px;
+        line-height: 33px;
+      }
+      &__hours {
+        color: #000;
+        font-size: 18px;
+        line-height: 33px;
+      }
+    }
+  }
+}
+
+.popup-menu {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 115px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  max-height: ~"calc(100vh - 115px)";
+  overflow: auto;
+  background-color: fade(@black, 90%);
+  padding: 22px 10px;
+  @media screen and (min-width: @big_phone) {
+    top: 190px;
+    max-height: ~"calc(100vh - 190px)";
+    padding: 51px 20px;
+  }
+  &__inner {
+    @media screen and (min-width: @tablet) {
+      width: 595px;
+      margin: 0 auto;
+    }
+  }
+  &__close {
+    position: absolute;
+    right: 8px;
+    @media screen and (min-width: @big_phone) {
+      right: 26px;
+      margin-top: 1px;
+    }
+    @media screen and (min-width: @tablet) {
+      right: 42px;
+      margin-top: 3px;
+    }
+    a {
+      padding: 10px;
+    }
+  }
+  &__categories {
+    .categories {
+      &__btn {
+        text-align: center;
+        padding-left: 12px;
+        padding-bottom: 22px;
+        border-bottom: 1px solid @gray_light;
+        @media screen and (min-width: @big_phone) {
+          padding-left: 31px;
+          padding-bottom: 39px;
+        }
+        a {
+          span {
+            display: inline-block;
+            vertical-align: middle;
+            .helvetica_bold();
+            font-size: 18px;
+            color: @white;
+            margin-right: 4px;
+            @media screen and (min-width: @big_phone) {
+              font-size: 24px;
+              margin-right: 13px;
+            }
+          }
+
+          i {
+            width: 10px;
+            height: 7px;
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url('../img/arrow-down.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: 0.2s transform ease;
+            transform: rotate(0deg);
+            @media screen and (min-width: @big_phone) {
+              width: 16px;
+              height: 10px;
+            }
+            &.rotated {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+      &__list {
+        display: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid @gray_light;
+        @media screen and (min-width: @big_phone) {
+          padding-top: 36px;
+          padding-bottom: 38px;
+        }
+      }
+      &__item {
+        display: inline-block;
+        width: 100%;
+        padding-top: 22px;
+        padding-bottom: 11px;
+        @media screen and (min-width: @big_phone) {
+          padding-left: 41px;
+          padding-bottom: 36px;
+        }
+        @media screen and (min-width: @tablet) {
+          text-align: center;
+        }
+        &:first-child {
+          padding-top: 0;
+        }
+        &:last-child {
+          padding-bottom: 0;
+        }
+        a {
+          color: @white;
+          font-size: 18px;
+          line-height: 1.2;
+          @media screen and (min-width: @big_phone) {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  &__main-menu {
+    .main-menu {
+      &__list {
+        padding: 20px;
+        border-bottom: 1px solid @gray_light;
+        @media screen and (min-width: @big_phone) {
+          padding-top: 46px;
+          padding-bottom: 38px;
+        }
+      }
+      &__item {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding-top: 22px;
+        padding-bottom: 11px;
+        @media screen and (min-width: @big_phone) {
+          padding-bottom: 30px;
+        }
+        &:first-child {
+          padding-top: 0;
+        }
+        &:last-child {
+          padding-bottom: 0;
+        }
+        a {
+          color: @white;
+          font-size: 18px;
+          line-height: 1.2;
+          @media screen and (min-width: @big_phone) {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  &__basket {
+    padding-top: 20px;
+    text-align: center;
+    @media screen and (min-width: @big_phone) {
+      padding-top: 56px;
+    }
+    .basket__link {
+      a {
+        .helvetica_bold();
+        color: @white;
+        font-size: 18px;
+        line-height: 1.2;
+        @media screen and (min-width: @big_phone) {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

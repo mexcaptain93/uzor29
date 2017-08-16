@@ -1,0 +1,46 @@
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background-color: @gray_light2;
+  @media screen and (min-width: @desktop) {
+    padding-bottom: 130px;
+  }
+}
+
+.main {
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+  @media screen and (min-width: @big_phone) {
+    padding: 0 20px;
+  }
+  @media screen and (min-width: @desktop) {
+    display: table;
+    padding: 0 50px;
+  }
+  &__sidebar {
+    display: none;
+    @media screen and (min-width: @desktop) {
+      margin-bottom: 36px;
+      z-index: 5;
+      position: relative;
+    }
+    @media screen and (min-width: @desktop) {
+      display: table-cell;
+      vertical-align: top;
+      margin-bottom: 0;
+    }
+  }
+  &__content {
+    @media screen and (min-width: @desktop) {
+      display: table-cell;
+      vertical-align: top;
+      padding-left: 38px;
+    }
+  }
+}
+
+.tr {
+  transition: 0.3s all ease;
+}

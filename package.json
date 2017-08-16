@@ -1,0 +1,21 @@
+{
+  "name": "hb-mobile-layout",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-less": "*",
+    "gulp-rigger": "*",
+    "gulp-svgo": "^1.2.0",
+    "gulp-uglify": "*",
+    "svgo": "*"
+  },
+  "dependencies": {
+    "gulp-shorthand": "*"
+  }
+}

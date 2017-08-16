@@ -1,0 +1,13 @@
+/.idea
+/bower_components
+/node_modules
+
+/*.sublime-project
+/*.sublime-workspace
+
+/yarn.lock
+/default
+
+/.vscode
+
+#/dist
