@@ -52,7 +52,7 @@ function equalHeightHot() {
 
 function equalHeightBottom() {
 	$('.js-equal-bottom').removeAttr('style');
-	if ($(window).width() < 980 && $(window).width() > 1440) {
+	if ($(window).width() < 980 && $(window).width() >=1440) {
 		return;
 	}
 	var maxHeight = 0;
@@ -65,7 +65,7 @@ function equalHeightBottom() {
 }
 function equalHeightBottom3() {
 	$('.js-equal-bottom-3').removeAttr('style');
-	if ($(window).width() <= 1440) {
+	if ($(window).width() < 1440) {
 		return;
 	}
 	var maxHeight = 0;
