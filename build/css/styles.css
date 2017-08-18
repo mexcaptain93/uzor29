@@ -545,6 +545,8 @@ a {
     padding: 0 10px;
     height: 162px !important;
     text-align: center;
+    width: 162px;
+    margin: 0 auto;
   }
 }
 .category-small__img img {
