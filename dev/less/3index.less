@@ -3,8 +3,11 @@
     @media screen and (min-width: @tablet) {
       margin-bottom: 20px;
     }
-    @media screen and (min-width: @desktop_middle) {
-      margin-bottom: 36px;
+    @media screen and (min-width: @desktop) {
+      display: table;
+      height: 1px;
+      width: 100%;
+      margin-bottom: 10px;
     }
     &__big {
 
@@ -12,21 +15,19 @@
       @media screen and (min-width: @tablet) {
         margin-bottom: 20px;
       }
-      @media screen and (min-width: @desktop_middle) {
+      @media screen and (min-width: @desktop) {
         display: table-cell;
         vertical-align: top;
         width: 50%;
-        height: 600px;
-        padding-right: 18px;
+        padding-right: 5px;
       }
     }
     &__list {
-      @media screen and (min-width: @desktop_middle) {
+      @media screen and (min-width: @desktop) {
         display: table-cell;
         vertical-align: top;
         width: 50%;
-        height: 600px;
-        padding-left: 18px;
+        padding-left: 5px;
       }
     }
     &__item {
@@ -42,6 +43,7 @@
     &__table {
       @media screen and (min-width: @tablet) {
         display: table;
+        width: 100%;
       }
     }
     &__table-row {
@@ -53,23 +55,23 @@
           @media screen and (min-width: @tablet) {
             padding-bottom: 10px;
           }
-          @media screen and (min-width: @desktop_middle) {
-            padding-bottom: 18px;
+          @media screen and (min-width: @desktop) {
+            padding-bottom: 5px;
           }
           &:first-child {
             @media screen and (min-width: @tablet) {
               padding-right: 10px;
             }
-            @media screen and (min-width: @desktop_middle) {
-              padding-right: 18px;
+            @media screen and (min-width: @desktop) {
+              padding-right: 5px;
             }
           }
           &:last-child {
             @media screen and (min-width: @tablet) {
               padding-left: 10px;
             }
-            @media screen and (min-width: @desktop_middle) {
-              padding-left: 18px;
+            @media screen and (min-width: @desktop) {
+              padding-left: 5px;
             }
 
           }
@@ -80,24 +82,24 @@
           @media screen and (min-width: @tablet) {
             padding-top: 10px;
           }
-          @media screen and (min-width: @desktop_middle) {
-            padding-top: 18px;
+          @media screen and (min-width: @desktop) {
+            padding-top: 5px;
           }
 
           &:first-child {
             @media screen and (min-width: @tablet) {
               padding-right: 10px;
             }
-            @media screen and (min-width: @desktop_middle) {
-              padding-right: 18px;
+            @media screen and (min-width: @desktop) {
+              padding-right: 5px;
             }
           }
           &:last-child {
             @media screen and (min-width: @tablet) {
               padding-left: 10px;
             }
-            @media screen and (min-width: @desktop_middle) {
-              padding-left: 18px;
+            @media screen and (min-width: @desktop) {
+              padding-left: 5px;
             }
           }
         }
@@ -105,7 +107,7 @@
     }
   }
   .info {
-    @media screen and (min-width: @desktop_middle) {
+    @media screen and (min-width: @desktop) {
       display: table;
       width: 100%;
     }
@@ -115,23 +117,23 @@
       @media screen and (min-width: @tablet) {
         margin-bottom: 20px;
       }
-      @media screen and (min-width: @desktop_middle) {
+      @media screen and (min-width: @desktop) {
         display: table-cell;
         vertical-align: top;
         width: 50%;
         height: 100%;
-        padding-right: 18px;
+        padding-right: 5px;
         margin-bottom: 0;
       }
     }
     &__right {
       display: block;
-      @media screen and (min-width: @desktop_middle) {
+      @media screen and (min-width: @desktop) {
         display: table-cell;
         vertical-align: top;
         width: 50%;
         height: 100%;
-        padding-left: 18px;
+        padding-left: 5px;
       }
       .right__inner {
         @media screen and (min-width: @tablet) {
@@ -155,8 +157,8 @@
             padding-right: 10px;
             margin-bottom: 0;
           }
-          @media screen and (min-width: @desktop_middle) {
-            padding-right: 18px;
+          @media screen and (min-width: @desktop) {
+            padding-right: 5px;
           }
 
         }
@@ -164,8 +166,8 @@
           @media screen and (min-width: @tablet) {
             padding-left: 10px;
           }
-          @media screen and (min-width: @desktop_middle) {
-            padding-left: 18px;
+          @media screen and (min-width: @desktop) {
+            padding-left: 5px;
           }
         }
       }
@@ -185,6 +187,9 @@
           font-size: 20px;
           line-height: 26px;
         }
+        @media screen and (min-width: @desktop) {
+          line-height: 30px;
+        }
       }
       ul {
         li {
@@ -195,6 +200,9 @@
           @media screen and (min-width: @big_phone) {
             font-size: 20px;
             line-height: 26px;
+          }
+          @media screen and (min-width: @desktop) {
+            line-height: 30px;
           }
           &:last-child {
             margin-bottom: 0;
@@ -247,6 +255,11 @@
         height: 100%;
         padding: 41px 40px 80px 33px;
       }
+      @media screen and (min-width: @desktop) {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
       &::after {
         content: '';
         position: absolute;
